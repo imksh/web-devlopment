@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid gray;
+    border-top: none;
+    border-right: none;
+}
+.section1{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1 img{
+    width: 400px;
+}
+.section2{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form input{
+    padding: 4px 8px;
+}
+
+.header{
+    width: 80%;
+    border-bottom: 2px solid red;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 16px;
+}
+
+.input-div{
+    display: flex;
+    padding: 10px;
+}
+.input-div label{
+    width: 25%;
+    font-weight: bold;
+}
+
+.gender{
+    display: flex;
+    padding: 10px;
+}
+
+.gender p{
+    width: 25%;
+    font-weight: bold;
+}
+
+.gender label{
+    font-weight: bold;
+    margin-right: 4px;
+    margin-left: 8px;
+}
+
+#state, #last{
+    margin-left: 10%;
+}
+
+.appointment-inner input{
+    margin-top: 6px;
+    margin-right: 4px;
+    margin-left: 16px;
+}
+.btn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 32px;
+}
+
+.btn button{
+    padding: 4px 8px;
+}

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form task 4</title>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <table border="1" cellpadding="8" align="center">
+        <colgroup>
+          <col width="300" />
+          <col width="300" />
+          <col width="300" />
+          <col width="300" />
+        </colgroup>
+        <thead>
+          <tr align="center">
+            <th colspan="4">Registration Form</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <label for="student-name">Student Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="student-first-name"
+                id="student-first-name"
+                placeholder="First Name"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="student-middle-name"
+                id="student-middle-name"
+                placeholder="Middle Name"
+              />
+            </td>
+            <td>
+              <input
+                type="text"
+                name="student-last-name"
+                id="student-last-name"
+                placeholder="Last Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="father-name">Father's Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="father-name"
+                id="father-name"
+                placeholder="Enter your father's Name"
+              />
+            </td>
+            <td>
+              <label for="mother-name">Mother's Name</label>
+            </td>
+            <td>
+              <input
+                type="text"
+                name="mother-name"
+                id="mother-name"
+                placeholder="Enter your mother's Name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="dob">Father's Name</label>
+            </td>
+            <td>
+              <input type="date" name="dob" id="dob" value="dob" />
+            </td>
+            <td>
+              <label for="gender">Gender</label>
+            </td>
+            <td>
+              <label for="male">Male</label>
+              <input type="radio" name="dob" id="male" />
+              <label for="female">Female</label>
+              <input type="radio" name="dob" id="female" value="female" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="category">Category</label>
+            </td>
+            <td>
+              <label for="male">Gen</label>
+              <input type="radio" name="category" id="gen" value="gen" />
+              <label for="obc">OBC</label>
+              <input type="radio" name="category" id="obc" value="obc" />
+              <label for="scst">SC/ST</label>
+              <input type="radio" name="category" id="scst" value="scst" />
+            </td>
+            <td>
+              <label for="handicapped">Handicapped</label>
+            </td>
+            <td>
+              <label for="handicapped-yes">Yes</label>
+              <input
+                type="radio"
+                name="handicapped"
+                id="handicapped-yes"
+                value="handicapped-yes"
+              />
+              <label for="handicapped-no">No</label>
+              <input
+                type="radio"
+                name="handicapped"
+                id="handicapped-no"
+                value="handicapped-no"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="ex-serviceman">Ex-Serviceman</label>
+            </td>
+            <td>
+              <label for="ex-serviceman-yes">Yes</label>
+              <input
+                type="radio"
+                name="ex-serviceman"
+                id="ex-serviceman-yes"
+                value="ex-serviceman-yes"
+              />
+              <label for="ex-serviceman-no">No</label>
+              <input
+                type="radio"
+                name="ex-serviceman"
+                id="ex-serviceman-no"
+                value="ex-serviceman-no"
+              />
+            </td>
+            <td>
+              <label for="ews">EWS</label>
+            </td>
+            <td>
+              <label for="ews-yes">Yes</label>
+              <input type="radio" name="ews" id="ews-yes" value="ews-yes" />
+              <label for="ews-no">No</label>
+              <input type="radio" name="ews" id="ews-no" value="ews-no" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="email">Email ID</label>
+            </td>
+            <td>
+              <input type="text" name="email" id="email" />
+            </td>
+            <td>
+              <label for="mob">Moblie No.</label>
+            </td>
+            <td>
+              <input type="text" name="mob" id="mob" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <span>State</span>
+            </td>
+            <td>
+              <select name="state" id="state">
+                <option value="-">Select any One</option>
+                <option value="mp">Madhya Pradesh</option>
+                <option value="bihar">Bihar</option>
+              </select>
+            </td>
+            <td>
+                <span>City</span>
+            </td>
+            <td>
+              <select name="city" id="city">
+                <option value="-">Select any One</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="alamnagar">Alamnagar</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>
+                <label for="photo">Upload Photo</label>
+            </td>
+            <td>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </td>
+            <td>
+                <label for="sign">Upload Signature</label>
+            </td>
+            <td>
+                <input type="file" id="sign" name="sign" accept="image/*">
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td colspan="3" align="center"> 
+                <button type="submit">Submit</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </body>
+</html>

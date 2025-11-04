@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap');
+
+
+#heading2{
+    background-color: blueviolet;
+}
+#heading1{
+    background: linear-gradient(90deg,red 0%,blue 30%,green 40%,yellow 90%);
+}
+
+p{
+    font-family: "Momo Trust Display", sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#heading3{
+    text-shadow: 2px 2px 3px rgb(99, 98, 98);
+    color: red;
+}
+
+.div1{
+    width: 500px;
+    height: 500px;
+    background-color: aquamarine;
+    border: 5px solid black;
+    box-shadow: 5px 5px 10px 10px black;
+}

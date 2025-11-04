@@ -1,0 +1,15 @@
+*{
+    background-color: red;
+}
+
+h1{
+    background-color: yellow;
+}
+
+.classSelector{
+    background-color: aquamarine;
+}
+
+#para1{
+    background-color: bisque;
+}

@@ -1,0 +1,70 @@
+body {
+  background-color: #2d72fc;
+}
+
+.container {
+  background-color: #fff;
+  width: fit-content;
+  padding: 30px;
+  margin: 50px auto;
+  border-radius: 10px;
+}
+h1 {
+  width: fit-content;
+}
+
+.inputDiv {
+}
+.inputDiv input {
+  border: none;
+  border-bottom: 1px solid #b9b9b9;
+  width: 300px;
+  padding: 10px 0;
+  font-size: large;
+  margin: 10px 0;
+}
+
+.inputDiv input::placeholder {
+  color: #b9b9b9;
+}
+
+.remember {
+  margin-bottom: 20px;
+  margin-top: 10px;
+
+  label,
+  input {
+    color: #898989;
+  }
+}
+#forget {
+  color: #2d72fc;
+  margin-left: 30%;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: large;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background-color: #2d72fc;
+  margin: 15px 0;
+}
+
+.signupDiv {
+  text-align: center;
+  p {
+    color: #929292;
+  }
+  span {
+    color: #2d72fc;
+  }
+}
+
+.condition {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}

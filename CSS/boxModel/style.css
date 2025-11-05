@@ -1,0 +1,44 @@
+#div1{
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    font-size: x-large;
+    background-color: aqua;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+#div2{
+    border: 1px solid redblack;
+    width: 200px;
+    height: 200px;
+    font-size: x-large;
+    background-color: aqua;
+    margin-left: 20px;
+    padding: 50px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px 1px black;
+    /* horizontal-offset vertical-offset blur-radius spread color */
+    /* animation: move 1s infinite; */
+}
+
+@keyframes move {
+    0%{
+        transform: translate(0px);
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: translate(1000px);
+    }
+    50%{
+        transform: translate(200px);
+    }
+    75%{
+        transform: translate(300px);
+    }
+    100%{
+        transform: translate(500px);
+        transform: rotate(360deg);
+    }
+}

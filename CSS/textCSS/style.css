@@ -2,7 +2,9 @@
 
 
 #heading2{
-    background-color: blueviolet;
+    background: linear-gradient(90deg,red,blue,green);
+    background-clip: text;
+    color: transparent;
 }
 #heading1{
     background: linear-gradient(90deg,red 0%,blue 30%,green 40%,yellow 90%);

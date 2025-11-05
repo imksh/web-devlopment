@@ -1,0 +1,75 @@
+body {
+  background: url(./bg.png);
+  background-size: cover;
+}
+
+#container {
+  border: 1px solid black;
+  width: 40%;
+  height: 500px;
+  border-radius: 20px;
+  margin: 50px auto;
+  background-color: rgba(255, 255, 255, 0.61);
+}
+
+#heading {
+  width: 100%;
+  text-align: center;
+  color: rgb(49, 49, 246);
+  font-size: x-large;
+}
+
+.formField {
+  width: 100%;
+  text-align: center;
+  label {
+    color: blueviolet;
+    font-size: large;
+  }
+  input {
+    border: 3px solid black;
+    border-radius: 15px;
+    padding: 8px;
+    margin: 5px;
+    outline-color: blueviolet;
+  }
+}
+
+#formControl {
+  width: fit-content;
+  margin: 10px auto;
+  button {
+    padding: 8px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+  }
+}
+
+#cancle {
+  border: 2px solid rgb(175, 20, 20);
+  background-color: rgb(240, 83, 83);
+}
+
+#submit {
+  border: 2px solid rgb(15, 137, 15);
+  background-color: rgb(87, 231, 87);
+}
+
+#cancle:hover {
+  border-color:  rgb(240, 83, 83);
+  background-color: rgb(175, 20, 20);
+}
+
+#submit:hover {
+  border: 2px solid rgb(87, 231, 87);
+  background-color: rgb(15, 137, 15);
+}
+
+#cancle:active {
+  background-color: blueviolet;
+}
+
+#submit:active {
+  background-color: blueviolet;
+}

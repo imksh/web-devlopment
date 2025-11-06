@@ -1,0 +1,27 @@
+#superDiv {
+  border: 1px solid black;
+  background-color: aquamarine;
+  width: 700px;
+  height: 700px;
+}
+#mainDiv {
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  gap: 10px;
+  width: fit-content;
+  /* handle grid */
+  justify-content: center;
+  /* handle items */
+  align-items: end;
+  justify-items: baseline;
+}
+
+.subDiv {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,16 @@
+:root {
+  --primary: blue;
+  --secondary: gray;
+  --tertiary: rgb(84, 84, 84);
+  --text: whitesmoke;
+  --sb: space-between;
+}
+
+.div {
+  --abc: center;
+  background-color: var(--primary);
+  color: var(--text);
+  display: flex;
+  justify-content: var(--sb);
+  align-items: var(--abc);
+}

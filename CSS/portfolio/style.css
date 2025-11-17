@@ -28,7 +28,7 @@ nav {
   align-items: center;
   width: 92%;
   margin: 0 auto;
-  height: 12vh;
+  height: 10vh;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
   z-index: 999;
@@ -522,4 +522,14 @@ nav button {
   background-color: black;
   border-radius: 10px;
   color: white;
+}
+
+.hover{
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+.hover:hover{
+  background-color: rgb(219, 217, 217);
 }

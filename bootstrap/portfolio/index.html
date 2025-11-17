@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="w-100 position-fixed top-0 z-1">
+      <nav class="d-flex justify-content-between align-items-center px-5 py-3">
+        <p class="fs-3 fw-bold">Karan Sharma</p>
+        <ul class="gap-4 list-unstyled d-flex">
+          <li>
+            <button class="btn">
+              <span class="material-symbols-outlined">page_header</span>Page
+            </button>
+          </li>
+          <li>
+            <button class="btn">
+              <span class="material-symbols-outlined">account_circle</span>
+              Account
+            </button>
+          </li>
+          <li>
+            <button class="btn">
+              <span class="material-symbols-outlined">code_blocks</span>Docs
+            </button>
+          </li>
+        </ul>
+        <ul class="gap-4 list-unstyled d-flex">
+          <li><button class="btn">Sign In</button></li>
+          <li><button class="btn btn-dark rounded-2">Blocks</button></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container mt-5 pt-5 mx-5">
+      <div class="d-flex justify-content-between mt-4 mb-5 pb-5">
+        <div class="d-flex flex-column justify-content-center pt-5 w-50 pe-5">
+          <h2 class="fs-1">Welcome to my Web Development Portofolio!</h2>
+          <p class="text-muted fs-5 lh-base my-3">
+            I'm Karan Sharma, a passionate web developer based in India. Here,
+            you'll get a glimpse of my journey in the world of web development,
+            where creativity meets functionality.
+          </p>
+          <div class="email">
+            <p class="text-muted">Your email</p>
+            <div class="d-flex">
+              <input
+                type="text"
+                placeholder="Enter your email"
+                name="email"
+                id="email"
+                class="input p-3 border border-dark-subtle rounded me-3"
+                style="width: 60%"
+              />
+              <button class="btn btn-dark">REQUIRE OFFER</button>
+            </div>
+            <p class="mt-2 text-muted">
+              Read my
+              <span class="text-decoration-underline"
+                >Terms and Conditions</span
+              >
+            </p>
+          </div>
+        </div>
+        <div class="section2 w-50">
+          <img
+            src="./_src/img.png"
+            alt="profile picture"
+            class="w-100 h-100 object-fit-cover rounded-3"
+          />
+        </div>
+      </div>
+      <div class="text-center my-5 py-5">
+        <p class="fs-3 fw-bold mb-2">My awsome clients</p>
+        <div class="clients flex justify-content-between w-75 m-auto">
+          <img
+            src="./_src/logo-coinbase.svg"
+            alt="logo-coinbase"
+            width="150px"
+          />
+          <img src="./_src/logo-spotify.svg" alt="logo-spotify" width="150px" />
+          <img
+            src="./_src/logo-pinterest.svg"
+            alt="logo-pinterest"
+            class=""
+            width="150px"
+          />
+          <img src="./_src/logo-google.svg" alt="logo-google" width="150px" />
+          <img src="./_src/logo-amazon.svg" alt="logo-amazon" width="150px" />
+          <img src="./_src/logo-netflix.svg" alt="logo-netflix" width="150px" />
+        </div>
+      </div>
+
+      <div class="my-5 text-center py-5">
+        <p>MY SKILLS</p>
+        <h2 class="fs-1 fw-bolder">What I do</h2>
+        <p class="fs-5 lh-sm my-5 text-muted w-75 mx-auto">
+          I'm not just a developer; I'm a digital dreamweaver. Crafting
+          immersive online experiences is not just a job but my calling.
+          Discover below how I can help you.
+        </p>
+
+        <div class="my-5 d-grid gap-5 text-center">
+          <div class="row gap-5 d-flex justify-content-around">
+            <div class="card col-4 w-25 border-0">
+              <div
+                class="bg-dark p-3 rounded-circle d-flex justify-content-center align-items-center mx-auto text-white my-3"
+              >
+                <span class="material-symbols-outlined"> fingerprint </span>
+              </div>
+              <p class="fw-bold fs-4 mb-3">Mobile App Development</p>
+              <p class="text-muted">
+                I specialize in creating responsive and intuitive mobile apps
+                that work seamlessly across iOS & Android devices. From concept
+                to deployment, I handle every stage of the development process.
+              </p>
+            </div>
+            <div class="card col-4 w-25 border-0">
+              <div
+                class="bg-dark p-3 rounded-circle d-flex justify-content-center align-items-center mx-auto text-white my-3"
+              >
+                <span class="material-symbols-outlined">page_header</span>
+              </div>
+              <p class="fw-bold fs-4 mb-3">Technology Stack</p>
+              <p class="text-muted">
+                'm well-versed in the industry's most popular frontend
+                technologies, including HTML5, CSS3, JavaScript, and frameworks
+                like React and React Native.
+              </p>
+            </div>
+            <div class="card col-4 w-25 border-0">
+              <div
+                class="bg-dark p-3 rounded-circle d-flex justify-content-center align-items-center mx-auto text-white my-3"
+              >
+                <span class="material-symbols-outlined">page_header</span>
+              </div>
+              <p class="fw-bold fs-4 mb-3">Web Optimization</p>
+              <p class="text-muted">
+                Creating beautiful and functional web experiences is my forte.
+                Using the latest technologies and best practices, I design and
+                build websites that captivate and engage users.
+              </p>
+            </div>
+          </div>
+          <div class="row gap-5 d-flex justify-content-around">
+            <div class="card col-4 w-25 border-0">
+              <div
+                class="bg-dark p-3 rounded-circle d-flex justify-content-center align-items-center mx-auto text-white my-3"
+              >
+                <span class="material-symbols-outlined">page_header</span>
+              </div>
+              <p class="fw-bold fs-4 mb-3">User-Centric Design</p>
+              <p class="text-muted">
+                Creating beautiful and functional web experiences is my forte.
+                Using the latest technologies and best practices, I design and
+                build websites that captivate and engage users.
+              </p>
+            </div>
+            <div class="card col-4 w-25 border-0">
+              <div
+                class="bg-dark p-3 rounded-circle d-flex justify-content-center align-items-center mx-auto text-white my-3"
+              >
+                <span class="material-symbols-outlined">page_header</span>
+              </div>
+              <p class="fw-bold fs-4 mb-3">Frontend Web Development:</p>
+              <p class="text-muted">
+                Creating beautiful and functional web experiences is my forte.
+                Using the latest technologies and best practices, I design and
+                build websites that captivate and engage users.
+              </p>
+            </div>
+            <div class="card col-4 w-25 border-0">
+              <div
+                class="bg-dark p-3 rounded-circle d-flex justify-content-center align-items-center mx-auto text-white my-3"
+              >
+                <span class="material-symbols-outlined">page_header</span>
+              </div>
+              <p class="fw-bold fs-4 mb-3">Frontend Web Development:</p>
+              <p class="text-muted">
+                Creating beautiful and functional web experiences is my forte.
+                Using the latest technologies and best practices, I design and
+                build websites that captivate and engage users.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-5 py-5">
+        <h2 class="fs-1 mb-3 text-center">My Projects</h2>
+        <p class="text-muted w-50 mx-auto fs-5 mb-5 text-center">
+          Whether you have a mobile app idea that needs to come to life or a
+          website that requires a facelift, I'm here to turn your digital dreams
+          into reality.
+        </p>
+        <div class="cardContainer d-grid justify-content-center mx-auto">
+          <div class="row">
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog-1.svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog2.svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog3.svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog4.svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog-1 (1).svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog2 (1).svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog3 (1).svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+            <div class="card col-3 p-4 border-0">
+              <img src="./_src/blog4 (1).svg" alt="blog 1" />
+              <p class="fs-5 fw-bold my-2">Mobile App Development</p>
+              <p class="text-muted">
+                Mobile app designed to help users discover and explore local
+                restaurants and cuisines.
+              </p>
+              <button class="btn btn-dark w-50">SEE DETAILS</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="div5 d-flex gap-5 my-5 py-5">
+        <div class="w-25">
+          <h2 class="fs-1 my-3">My Resume</h2>
+          <p class="text-muted">
+            Highly skilled and creative Web Developer with 5+ years of
+            experience in crafting visually stunning and functionally robust
+            websites and web applications.
+          </p>
+          <button class="btn fw-bold fs-6 hover">
+            VIEW MORE
+            <span class="material-symbols-outlined"> arrow_forward </span>
+          </button>
+        </div>
+        <div class="dummyGap w-25"></div>
+        <div class="section5b">
+          <div class="d-flex my-3 align-items-center">
+            <div
+              class="p-3 rounded-3 text-white bg-black me-3 d-flex justify-content-center align-items-center"
+            >
+              <span class="material-symbols-outlined">
+                android_cell_4_bar
+              </span>
+            </div>
+            <p class="text-muted">Bachelor of Science in Computer Science</p>
+          </div>
+          <div class="d-flex my-3 align-items-center">
+            <div
+              class="p-3 rounded-3 text-white bg-black me-3 d-flex justify-content-center align-items-center"
+            >
+              <span class="material-symbols-outlined">page_header</span>
+            </div>
+            <p class="text-muted">Certified Web Developer</p>
+          </div>
+          <div class="d-flex my-3 align-items-center">
+            <div
+              class="p-3 rounded-3 text-white bg-black me-3 d-flex justify-content-center align-items-center"
+            >
+              <span class="material-symbols-outlined"> arrow_warm_up </span>
+            </div>
+            <p class="text-muted">
+              Frontend Framework Proficiency Certification
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="my-4 py-5">
+        <h2 class="fs-1 my-4 text-center">What Clients Say</h2>
+        <p class="text-muted w-50 text-center fs-5 mb-5 mx-auto">
+          Discover what clients have to say about their experiences working with
+          me. My client's satisfaction is my greatest achievement!
+        </p>
+        <div
+          class="d-flex w-75 m-auto justify-content-between align-items-center"
+        >
+          <div class="reviewInfo w-50">
+            <h4 class="fs-1 mb-3 w-75">Mobile App Development</h4>
+            <p class="text-muted fs-6">
+              I had the pleasure of working with Lily on a critical web
+              development project, and I can confidently say that their
+              expertise and professionalism exceeded my expectations.
+            </p>
+            <p class="fw-bold my-2">Michael - Technical Manager</p>
+            <p class="text-muted fs-6">Marketing @ APPLE INC.</p>
+            <div class="reviewer">
+              <button
+                class="btn border border-start-0 border-top-0 border-bottom-0 border-dark-subtle rounded-0"
+              >
+                <img
+                  src="./_src/avatar1.jpg"
+                  alt=""
+                  width="70px"
+                  class="opacity-50"
+                />
+              </button>
+              <button
+                class="btn border border-start-0 border-top-0 border-bottom-0 border-dark-subtle rounded-0"
+              >
+                <img
+                  src="./_src/avatar2.jpg"
+                  alt=""
+                  width="70px"
+                  class="opacity-50"
+                />
+              </button>
+              <button class="btn border-0">
+                <img src="./_src/avatar3.jpg" alt="" width="70px" />
+              </button>
+            </div>
+          </div>
+          <div>
+            <img
+              src="./_src/avatar3.jpg"
+              alt=""
+              width="288px"
+              height="336px"
+              class="object-fit-cover rounded-4"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center my-5 gray py-5">
+        <p class="text-muted">POPULAR CLIENTS</p>
+        <h2 class="fs-3 fw-bold my-5 w-25 mx-auto">
+          Trusted by over 10,000+ clients
+        </h2>
+        <div class="clients flex justify-content-between w-75 m-auto">
+          <img
+            src="./_src/logo-coinbase.svg"
+            alt="logo-coinbase"
+            width="150px"
+          />
+          <img src="./_src/logo-spotify.svg" alt="logo-spotify" width="150px" />
+          <img
+            src="./_src/logo-pinterest.svg"
+            alt="logo-pinterest"
+            width="150px"
+          />
+          <img src="./_src/logo-google.svg" alt="logo-google" width="150px" />
+          <img src="./_src/logo-amazon.svg" alt="logo-amazon" width="150px" />
+          <img src="./_src/logo-netflix.svg" alt="logo-netflix" width="150px" />
+        </div>
+      </div>
+
+      <div class="div8 my-5 py-5">
+        <h2 class="text-center fs-1">Contact Us</h2>
+        <p class="text-muted w-50 mx-auto text-center m-3 fs-5 mb-5">
+          Ready to get started? Feel free to reach out through the contact form,
+          and let's embark on a journey of innovation and success.
+        </p>
+
+        <div class="p-4 d-flex gap-5 mt-3 rounded-4 shadow">
+          <div class="section8a bg-black text-white p-5 rounded-4 w-50">
+            <h3 class="fs-4 mb-4">Contact Information</h3>
+            <p class="mb-1 text-white-50">
+              Fill up the form and our Team will get back to you within 24
+              hours.
+            </p>
+            <div class="d-flex align-items-center my-4">
+              <span class="material-symbols-outlined me-3 fs-2"> call </span>
+              <p class="my-auto">+1(424) 535 3523</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <span class="material-symbols-outlined me-3 fs-2"> mail </span>
+              <p class="my-auto">hello@mail.com</p>
+            </div>
+            <div class="d-flex align-items-center my-4">
+              <span class="material-symbols-outlined me-3 fs-2">
+                local_activity
+              </span>
+              <p class="my-auto">Open Support Ticket</p>
+            </div>
+          </div>
+          <div class="flex-grow-1">
+            <div class="my-3 d-flex justify-content-between gap-3">
+              <div class="d-flex flex-column w-50">
+                <label for="firstName">First Name</label>
+                <input
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  placeholder="eg. Karan"
+                  class="border border-start-0 border-top-0 border-end-0 border-bottom border-dark py-2"
+                />
+              </div>
+              <div class="d-flex flex-column w-50">
+                <label for="lastName">Last Name</label>
+                <input
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  placeholder="eg. Sharma"
+                  class="border border-start-0 border-top-0 border-end-0 border-bottom border-dark py-2"
+                />
+              </div>
+            </div>
+            <div class="my-3 w-100 d-flex flex-column">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="eg. karan@mail.com"
+                class="border border-start-0 border-top-0 border-end-0 border-bottom border-dark py-2"
+              />
+            </div>
+            <div class="my-3">
+              <p>What are you interested on?</p>
+              <div class="d-flex gap-2 mt-2">
+                <div class="radiobtn">
+                  <input
+                    type="radio"
+                    id="design"
+                    value="design"
+                    name="design"
+                    class="me-1"
+                  />
+                  <label for="design" class="text-muted">Design</label>
+                </div>
+                <div class="radiobtn">
+                  <input
+                    type="radio"
+                    id="development"
+                    value="development"
+                    name="development"
+                    class="me-1"
+                  />
+                  <label for="development" class="text-muted"
+                    >Development</label
+                  >
+                </div>
+                <div class="radiobtn">
+                  <input
+                    type="radio"
+                    id="support"
+                    value="support"
+                    name="support"
+                    class="me-1"
+                  />
+                  <label for="support" class="text-muted">Support</label>
+                </div>
+                <div class="radiobtn">
+                  <input type="radio" id="other" value="other" name="other" />
+                  <label for="other" class="text-muted">Other</label>
+                </div>
+              </div>
+            </div>
+            <div class="my-3">
+              <p>Your Messsage</p>
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                class="w-100 border border-start-0 border-top-0 border-end-0 border-bottom border-dark mt-1"
+              ></textarea>
+            </div>
+            <div class="d-flex justify-content-end my-3">
+              <button class="btn btn-dark">SEND MESSAGE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="px-5 mt-5">
+      <div
+        class="div9 d-flex justify-content-between border border-start-0 border-bottom-0 border-end-0 border-top border-dark py-4"
+      >
+        <p class="text-muted">
+          © 2025 Made with Material Tailwind by Creative Tim. Distributed by
+          ThemeWagon
+        </p>
+
+        <ul class="footerUl list-unstyled d-flex gap-3 align-items-center">
+          <li><button class="btn text-muted">Home</button></li>
+          <li><button class="btn text-muted">About Us</button></li>
+          <li><button class="btn text-muted">Blog</button></li>
+          <li><button class="btn text-muted">Service</button></li>
+          <li><button class="btn btn-dark">Subscrbe</button></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

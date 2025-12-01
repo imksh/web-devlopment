@@ -1,0 +1,27 @@
+header {
+  position: fixed;
+  z-index: 99;
+  top: 0;
+}
+main {
+  margin-top: 20vh;
+}
+#input {
+  position: fixed;
+  z-index: 99;
+  top: 10vh;
+  display: flex;
+  justify-content: center;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+}
+ul button {
+  max-width: 120px;
+}
+
+@media (max-width: 400) {
+  .hide {
+    display: none;
+  }
+}

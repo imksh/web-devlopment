@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Events</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="bulbs">
+        <div id="bulb">Bulb</div>
+        <div class="btns">
+            <input type="color" name="white" id="color" />
+          <button onclick="on()">On</button>
+          <button onclick="off()">Off</button>
+          <button onclick="blue()" style="background-color: blue; color: white">
+            Blue
+          </button>
+          <button onclick="red()" style="background-color: red; color: white">
+            Red
+          </button>
+          <button onclick="pink()" style="background-color: pink; color: white">
+            Pink
+          </button>
+        </div>
+      </div>
+      <div class="smartBulb">
+        <div id="smartBulb">Smart Bulb</div>
+        <button id="smartbtn" onclick="smartBulb()">On</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

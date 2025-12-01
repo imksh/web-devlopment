@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form task 3</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <h1>Pizza Order Form</h1>
+    <div>
+      <label for="first-name">First Name</label>
+      <input type="text" id="first-name" name="first-name" />
+      <br />
+      <br />
+      <label for="last-name">Last Name</label>
+      <input type="text" id="last-name" name="last-name" />
+      <br />
+      <br />
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" />
+      <br />
+      <br />
+      <label for="contact-number">Contact Number</label>
+      <input type="text" id="contact-number" name="contact-number" />
+      <br />
+      <br />
+      <label for="date">Preferred Dilivery Date: </label>
+      <input type="date" id="date" name="date" />
+      <br />
+
+      <p>Size:</p>
+      <input type="radio" id="small" name="size" value="small" />
+      <label for="small">Small</label>
+      <input type="radio" id="medium" name="size" value="medium" />
+      <label for="medium">Medium</label>
+      <input type="radio" id="large" name="size" value="large" />
+      <label for="large">Large</label>
+      <br />
+      <p>Flavor:</p>
+      <input type="checkbox" id="hawaiian" name="flavor" value="hawaiian" />
+      <label for="hawaiian">Hawaiian (Php 150.00)</label>
+      <select name="qty-hawaiian">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br />
+      <input type="checkbox" id="pepperoni" name="flavor" value="pepperoni" />
+      <label for="pepperoni">Pepperoni (Php 140.00)</label>
+      <select name="qty-pepperoni">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br />
+      <input type="checkbox" id="vegetable" name="flavor" value="vegetable" />
+      <label for="vegetable">Vegetable (Php 130.00)</label>
+      <select name="qty-vegetable">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br />
+      <br />
+      <label for="card">Credit Card Number: </label>
+      <input type="text" id="card" name="card" />
+      <br />
+      <br />
+      <label for="pin">PIN: </label>
+      <input type="password" id="pin" name="pin" />
+      <br />
+      <br />
+      <label for="note">Additional Note: </label>
+      <br />
+
+      <textarea name="note" id="note" rows="5" cols="28"></textarea>
+      <br /><br />
+      <button id="submit" onclick="submit()">Submit Order</button>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="pizzaForm.js"></script>
+  </body>
+</html>

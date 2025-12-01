@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body class="bg-light pb-5">
+    <header class="position-sticky top-0">
+      <div
+        class="container-fluid bg-primary p-3 py-1 d-flex justify-content-between py-2"
+      >
+        <div class="d-flex gap-3">
+          <img
+            src="./_src/logo.png"
+            alt="ricr logo"
+            width="50"
+            height="50"
+            class="rounded-circle"
+            style="object-fit: cover"
+          />
+          <h3 class="text-light d-flex align-items-center">
+            Registration Form
+          </h3>
+        </div>
+
+        <button
+          class="rounded-4 py-1 px-3 form-control w-auto btn-light border-black border-1"
+        >
+          Student Login
+        </button>
+      </div>
+    </header>
+
+    <section>
+      <div
+        class="container rounded-4 shadow p-3 mt-4 border-2 border-primary border"
+      >
+        <div>
+          <fieldset class="border-3 border p-3 rounded-3">
+            <legend class="float-none w-auto px-2 text-primary fs-5">
+              Personal Information:
+            </legend>
+
+            <div>
+              <label for="userName" class="pe-3">Full Name:</label>
+              <input
+                type="text"
+                id="userName"
+                class="rounded-3 border-1 p-1"
+                placeholder="Full Name"
+                required
+              />
+            </div>
+
+            <div class="pt-3">
+              <label for="userEmail" class="pe-3">Email Address:</label>
+              <input
+                type="email"
+                id="userEmail"
+                class="rounded-3 border-1 p-1"
+                placeholder="name@example.com"
+                required
+              />
+            </div>
+
+            <div class="pt-3">
+              <label for="userNumber" class="pe-3">Mobile Number:</label>
+              <input
+                type="tel"
+                id="userNumber"
+                class="rounded-3 border-1 p-1"
+                placeholder="Enter your number"
+                required
+              />
+            </div>
+
+            <div class="pt-3 d-flex">
+              <label for="dob" class="pe-4">Date of Birth:</label>
+              <input
+                type="date"
+                id="dob"
+                class="rounded-3 border-1 p-1"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <div class="pt-4">
+            <fieldset class="border-3 border p-3 rounded-3">
+              <legend class="float-none w-auto px-2 text-primary fs-5">
+                Academic Details:
+              </legend>
+
+              <div class="d-flex">
+                <label for="qualification" class="pe-3">Qualification:</label>
+                <select
+                  id="qualification"
+                  class="form-control w-auto rounded-3 border-black border-1"
+                  required
+                >
+                  <option value="">Select Qualification</option>
+                  <option value="10th">10th Pass</option>
+                  <option value="12th">12th Pass</option>
+                  <option value="diploma">Diploma</option>
+                  <option value="ug">Under Graduate (UG)</option>
+                  <option value="pg">Post Graduate (PG)</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="pt-3">
+                <label for="userPercentage" class="pe-2"
+                  >Percentage/Grade:</label
+                >
+                <input
+                  type="text"
+                  id="userPercentage"
+                  class="rounded-3 border-black border-1 p-1"
+                  placeholder="Grade (A-F)"
+                  required
+                />
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="pt-4">
+            <fieldset class="border-3 border p-3 rounded-3">
+              <legend class="float-none w-auto px-2 text-primary fs-5">
+                Course Information:
+              </legend>
+
+              <div>
+                <label for="preferredCourse" class="pe-3"
+                  >Preferred Course:</label
+                >
+                <select id="preferredCourse" class="p-1 rounded-3" required>
+                  <option value="">Select Your Course</option>
+                  <option value="java">Java</option>
+                  <option value="dsa">DSA</option>
+                  <option value="cpp">CPP</option>
+                  <option value="dataScience">Data Science</option>
+                  <option value="webDev">Web Devlopment</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="batch pt-3">
+                <label for="batch" class="pe-3">Preferred Batch:</label>
+                <input type="checkbox" name="batch" id="morning" />
+                <label for="morning" class="pe-1">Morning</label>
+                <input type="checkbox" name="batch" id="afternoon" />
+                <label for="afternoon" class="pe-1">Afternoon</label>
+                <input type="checkbox" name="batch" id="evening" />
+                <label for="evening">Evening</label>
+              </div>
+
+              <div class="batch pt-3">
+                <label for="batchTime" class="pe-3">Preferred Time:</label>
+                <input type="radio" name="batchTime" id="10am" value="10:00 - 12:00" />
+                <label for="10am" class="pe-1">10:00 - 12:00</label>
+                <input type="radio" name="batchTime" id="6pm" value="06:00 - 07:30" />
+                <label for="6pm" class="pe-1">06:00 - 07:30</label>
+                <input type="radio" name="batchTime" id="7:30pm" value="07:30 - 9:00"/>
+                <label for="7:30pm">07:30 - 9:00</label>
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="pt-4">
+            <fieldset class="border-3 border p-3 rounded-3">
+              <legend class="float-none w-auto px-2 text-primary fs-5">
+                Address:
+              </legend>
+
+              <div class="d-flex">
+                <label for="userAddress" class="pe-3"
+                  >Residential Address:</label
+                >
+                <textarea
+                  id="userAddress"
+                  class="p-2 rounded-3"
+                  rows="3"
+                  placeholder="Enter full address: House No, Street, City, Pin Code"
+                  required
+                ></textarea>
+              </div>
+
+              <div class="pt-3">
+                <label for="userCity" class="pe-3">City:</label>
+                <input
+                  type="text"
+                  id="userCity"
+                  class="rounded-3 border-1 p-1"
+                  pattern="[A-Za-z\s]{2,}"
+                  placeholder="Enter your city"
+                  required
+                />
+              </div>
+
+              <div class="pt-3">
+                <label for="userPincode" class="pe-3">Pincode:</label>
+                <input
+                  type="text"
+                  id="userPincode"
+                  class="p-1 rounded-3 border-1"
+                  pattern="[0-9]{6}"
+                  maxlength="6"
+                  placeholder="Pincode"
+                  required
+                />
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="pt-4">
+            <fieldset class="border-3 border p-3 rounded-3">
+              <legend class="float-none w-auto px-2 text-primary fs-5">
+                Guardian Details:
+              </legend>
+
+              <div>
+                <label for="guardianName" class="pe-3"
+                  >Guardian’s Full Name:</label
+                >
+                <input
+                  type="text"
+                  id="guardianName"
+                  class="p-1 border-1 rounded-3"
+                  placeholder="Enter Guardian’s Name"
+                  required
+                  pattern="[A-Za-z ]+"
+                />
+              </div>
+
+              <div class="pt-3">
+                <label for="GuardianContactNumber" class="pe-3">
+                  Guardian’s Contact Number:
+                </label>
+                <input
+                  type="text"
+                  id="GuardianContactNumber"
+                  class="p-1 border-1 rounded-3"
+                  placeholder="Enter Contact Number"
+                  required
+                />
+              </div>
+            </fieldset>
+          </div>
+
+          <div class="pt-4">
+            <fieldset class="border-3 border p-3 rounded-3">
+              <legend class="float-none w-auto px-2 text-primary fs-5">
+                Additional Information:
+              </legend>
+
+              <label for="refSource" class="pe-3"
+                >How did you hear about us?</label
+              >
+              <select id="refSource" class="p-1 rounded-3" required>
+                <option value="" selected disabled>
+                  -- Select an option --
+                </option>
+                <option value="Friends">Friends</option>
+                <option value="Online Ad">Online Ad</option>
+                <option value="Newspaper">Newspaper</option>
+                <option value="Social Media">Social Media</option>
+                <option value="Other">Other</option>
+              </select>
+            </fieldset>
+          </div>
+
+          <div class="pt-3">
+            <button
+              type="submit"
+              class="form-control w-auto bg-success text-white rounded-3"
+              onClick="submit()"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="registrationForm.js"></script>
+  </body>
+</html>

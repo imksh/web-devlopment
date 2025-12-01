@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    padding: 50px;
+    border: 1px solid black;
+    width: 80vw;
+    gap: 30px;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.screen{
+    padding: 40px;
+    width: 60%;
+    border: 1px solid black;
+    text-align: center;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.choose{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    div{
+        display: flex;
+        justify-content: baseline;
+        gap: 10px;
+        p{
+            min-width: 100px;
+        }
+    }
+}

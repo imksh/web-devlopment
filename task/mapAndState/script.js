@@ -1,4 +1,42 @@
 let audio = new Audio("./_src/button2.mp3");
+let btn1 = new Audio("./_src/button1.mp3");
+let clearSound = new Audio("./_src/clear.mp3");
+let success = new Audio("./_src/sucess.mp3");
+let vol = true;
+const states = [
+  { state: "Andhra Pradesh", top: "68%", left: "37%" },
+  { state: "Arunachal Pradesh", top: "26%", left: "85%" },
+  { state: "Assam", top: "32%", left: "80%" },
+  { state: "Bihar", top: "35%", left: "59%" },
+  { state: "Chandigarh", top: "19%", left: "30%" },
+  { state: "Chhattisgarh", top: "47%", left: "47%" },
+  { state: "Delhi", top: "26%", left: "32%" },
+  { state: "Goa", top: "65.5%", left: "20%" },
+  { state: "Gujarat", top: "42%", left: "15%" },
+  { state: "Haryana", top: "24%", left: "30%" },
+  { state: "Himachal Pradesh", top: "16%", left: "34%" },
+  { state: "Jammu & Kashmir", top: "10%", left: "27%" },
+  { state: "Jharkhand", top: "41%", left: "57%" },
+  { state: "Karnataka", top: "68%", left: "26%" },
+  { state: "Kerala", top: "83%", left: "28%" },
+  { state: "Ladakh", top: "7%", left: "32%" },
+  { state: "Madhya Pradesh", top: "42%", left: "35%" },
+  { state: "Maharashtra", top: "53%", left: "25%" },
+  { state: "Manipur", top: "37%", left: "84%" },
+  { state: "Meghalaya", top: "34.5%", left: "75%" },
+  { state: "Mizoram", top: "42%", left: "81%" },
+  { state: "Nagaland", top: "32%", left: "86%" },
+  { state: "Odisha", top: "50%", left: "50%" },
+  { state: "Punjab", top: "18%", left: "27%" },
+  { state: "Rajasthan", top: "30%", left: "20%" },
+  { state: "Sikkim", top: "30%", left: "66.8%" },
+  { state: "Tamil Nadu", top: "80%", left: "35%" },
+  { state: "Telangana", top: "58%", left: "37%" },
+  { state: "Tripura", top: "40%", left: "77%" },
+  { state: "Uttar Pradesh", top: "32%", left: "43%" },
+  { state: "Uttarakhand", top: "21%", left: "39%" },
+  { state: "West Bengal", top: "41%", left: "65%" },
+];
 function search() {
   const text = document.getElementById("state").value;
   const img = document.getElementById("div");
@@ -171,7 +209,7 @@ function search() {
     div.style.left = "65%";
     img.appendChild(div);
   }
-  audio.play();
+  if (vol) audio.play();
   const temp = document.createElement("p");
   temp.innerText = text;
   temp.style.position = "absolute";
@@ -188,4 +226,68 @@ function search() {
   div.addEventListener("mouseleave", () => {
     div.removeChild(temp);
   });
+}
+
+function volume() {
+  const btn = document.getElementById("volume");
+  const btn2 = document.getElementById("volume2");
+  vol = !vol;
+  if (vol) {
+    btn.innerHTML = `<i class="bi bi-volume-up"></i>`;
+    btn2.innerHTML = `<i class="bi bi-volume-up"></i>`;
+  } else {
+    btn.innerHTML = `<i class="bi bi-volume-mute"></i>`;
+    btn2.innerHTML = `<i class="bi bi-volume-mute"></i>`;
+  }
+  btn1.play();
+}
+
+function add() {
+  const text = document.getElementById("state").value;
+  const img = document.getElementById("div");
+  states.map((item) => {
+    const div = document.createElement("div");
+    const w = window.innerWidth;
+    div.innerText = "⛳️";
+    div.style.position = "absolute";
+    if (w < 400) {
+      div.style.fontSize = "small";
+    }
+    div.style.zIndex = "99";
+    div.style.cursor = "pointer";
+    div.style.top = item.top;
+    div.style.left = item.left;
+    img.appendChild(div);
+    const temp = document.createElement("p");
+    temp.innerText = item.state;
+    temp.style.position = "absolute";
+    temp.style.zIndex = "1";
+    temp.style.bottom = "-35px";
+    temp.style.left = "0%";
+    temp.style.cursor = "pointer";
+    temp.style.width = "140px";
+    temp.style.fontWeight = "bold";
+    div.addEventListener("mouseenter", () => {
+      div.appendChild(temp);
+    });
+    div.addEventListener("mouseleave", () => {
+      div.removeChild(temp);
+    });
+    if (vol) success.play();
+  });
+}
+
+function clearAll() {
+  const parent = document.getElementById("div");
+  if (parent.children.length === 1) return;
+  while (parent.children.length > 1) {
+    parent.removeChild(parent.lastChild);
+  }
+
+  if (vol) {
+    clearSound.play();
+    setTimeout(() => {
+      clearSound.pause();
+    }, 500);
+  }
 }

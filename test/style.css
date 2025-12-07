@@ -1,0 +1,123 @@
+body {
+  margin-top: 13vh;
+  padding-bottom: 50px;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 13vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+.hero-section {
+  background-image: linear-gradient(
+    to right bottom,
+    #0d6af6,
+    #0083fd,
+    #0099fb,
+    #00abf4,
+    #12bbeb
+  );
+  position: relative;
+  min-height: 80vh;
+  color: white;
+
+  button{
+    background-color: white;
+    margin-top: 30px;
+  }
+  .section1{
+
+  padding-left: 5%;
+  }
+}
+
+
+.cardContainer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    h2{
+        margin-top: 14px;
+    }
+}
+
+.formContainer{
+    background-image: linear-gradient(
+    to right bottom,
+    #0d6af6,
+    #0083fd,
+    #0099fb,
+    #00abf4,
+    #12bbeb
+  );
+  min-height: 87vh;
+}
+
+.enrollButton{
+    background-color: white;
+    margin-top: 30px;
+}
+
+#message{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.custom-shape-divider-bottom-1765084135 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+}
+
+.custom-shape-divider-bottom-1765084135 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1765084135 .shape-fill {
+    fill: #FFFFFF;
+}
+
+
+.card:hover{
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+   background-color: rgb(73, 167, 243);
+   color: white;
+}
+
+nav button:hover{
+    color: rgb(73, 167, 243) !important;
+}
+
+.hero-section button:hover{
+    color: white !important;
+}

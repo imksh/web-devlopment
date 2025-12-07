@@ -1,63 +1,98 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    background-color: aqua;
+body {
+  background-color: rgb(186, 234, 234);
 }
-.container{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#bulb{
-    width: fit-content;
-    margin: 10px;
-    padding: 50px;
-    border: 1px solid black;
-    border-radius: 50%;
+#bulb {
+  width: fit-content;
+  margin: 10px;
+  padding: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
 }
-.btns{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
+.btns {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+  justify-items: center;
+  align-items: center;
 }
-button{
-    padding: 10px 20px;
-    cursor: pointer;
+button {
+  padding: 10px 20px;
+  cursor: pointer;
 }
-.bulbs{
-    display: flex;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-}
-
-.smartBulb{
-    margin: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-#smartBulb{
-    height: 100px;
-    aspect-ratio: 1;
-    border: 1px solid black;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bulbs {
+  display: flex;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
 }
 
-.on{
-    background-color: yellow;
+.smartBulb {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#smartBulb,
+#colorBulb {
+  height: 100px;
+  aspect-ratio: 1;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.on {
+  background-color: yellow;
+}
+
+/* #colorBulb {
+  position: absolute;
+} */
+
+.colourBulb {
+  display: flex;
+
+  gap: 10px;
+}
+.colorBtn {
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1;
+}
+
+.red {
+  background-color: red;
+}
+.blue {
+  background-color: blue;
+}
+.orange {
+  background-color: orange;
+}
+.green {
+  background-color: green;
+}
+.pink {
+  background-color: pink;
+}
+.yellow {
+  background-color: yellow;
 }

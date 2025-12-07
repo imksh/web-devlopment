@@ -1,3 +1,4 @@
+let audio = new Audio("./_src/button2.mp3");
 function search() {
   const text = document.getElementById("state").value;
   const img = document.getElementById("div");
@@ -170,6 +171,7 @@ function search() {
     div.style.left = "65%";
     img.appendChild(div);
   }
+  audio.play();
   const temp = document.createElement("p");
   temp.innerText = text;
   temp.style.position = "absolute";

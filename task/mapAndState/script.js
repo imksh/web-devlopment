@@ -4,38 +4,43 @@ let clearSound = new Audio("./_src/clear.mp3");
 let success = new Audio("./_src/sucess.mp3");
 let vol = true;
 const states = [
-  { state: "Andhra Pradesh", top: "68%", left: "37%" },
-  { state: "Arunachal Pradesh", top: "26%", left: "85%" },
-  { state: "Assam", top: "32%", left: "80%" },
-  { state: "Bihar", top: "35%", left: "59%" },
-  { state: "Chandigarh", top: "19%", left: "30%" },
-  { state: "Chhattisgarh", top: "47%", left: "47%" },
-  { state: "Delhi", top: "26%", left: "32%" },
-  { state: "Goa", top: "65.5%", left: "20%" },
-  { state: "Gujarat", top: "42%", left: "15%" },
-  { state: "Haryana", top: "24%", left: "30%" },
-  { state: "Himachal Pradesh", top: "16%", left: "34%" },
-  { state: "Jammu & Kashmir", top: "10%", left: "27%" },
-  { state: "Jharkhand", top: "41%", left: "57%" },
-  { state: "Karnataka", top: "68%", left: "26%" },
-  { state: "Kerala", top: "83%", left: "28%" },
-  { state: "Ladakh", top: "7%", left: "32%" },
-  { state: "Madhya Pradesh", top: "42%", left: "35%" },
-  { state: "Maharashtra", top: "53%", left: "25%" },
-  { state: "Manipur", top: "37%", left: "84%" },
-  { state: "Meghalaya", top: "34.5%", left: "75%" },
-  { state: "Mizoram", top: "42%", left: "81%" },
-  { state: "Nagaland", top: "32%", left: "86%" },
-  { state: "Odisha", top: "50%", left: "50%" },
-  { state: "Punjab", top: "18%", left: "27%" },
-  { state: "Rajasthan", top: "30%", left: "20%" },
-  { state: "Sikkim", top: "30%", left: "66.8%" },
-  { state: "Tamil Nadu", top: "80%", left: "35%" },
-  { state: "Telangana", top: "58%", left: "37%" },
-  { state: "Tripura", top: "40%", left: "77%" },
-  { state: "Uttar Pradesh", top: "32%", left: "43%" },
-  { state: "Uttarakhand", top: "21%", left: "39%" },
-  { state: "West Bengal", top: "41%", left: "65%" },
+  { state: "Andhra Pradesh", capital: "Amaravati", top: "68%", left: "37%" },
+  { state: "Arunachal Pradesh", capital: "Itanagar", top: "26%", left: "85%" },
+  { state: "Assam", capital: "Dispur", top: "32%", left: "80%" },
+  { state: "Bihar", capital: "Patna", top: "35%", left: "59%" },
+  { state: "Chandigarh", capital: "Chandigarh", top: "19%", left: "30%" },
+  { state: "Chhattisgarh", capital: "Raipur", top: "47%", left: "47%" },
+  { state: "Delhi", capital: "New Delhi", top: "26%", left: "32%" },
+  { state: "Goa", capital: "Panaji", top: "65.5%", left: "20%" },
+  { state: "Gujarat", capital: "Gandhinagar", top: "42%", left: "15%" },
+  { state: "Haryana", capital: "Chandigarh", top: "24%", left: "30%" },
+  { state: "Himachal Pradesh", capital: "Shimla", top: "16%", left: "34%" },
+  {
+    state: "Jammu & Kashmir",
+    capital: "Srinagar/Jammu",
+    top: "10%",
+    left: "27%",
+  },
+  { state: "Jharkhand", capital: "Ranchi", top: "41%", left: "57%" },
+  { state: "Karnataka", capital: "Bengaluru", top: "68%", left: "26%" },
+  { state: "Kerala", capital: "Thiruvananthapuram", top: "83%", left: "28%" },
+  { state: "Ladakh", capital: "Leh", top: "7%", left: "32%" },
+  { state: "Madhya Pradesh", capital: "Bhopal", top: "42%", left: "35%" },
+  { state: "Maharashtra", capital: "Mumbai", top: "53%", left: "25%" },
+  { state: "Manipur", capital: "Imphal", top: "37%", left: "84%" },
+  { state: "Meghalaya", capital: "Shillong", top: "34.5%", left: "75%" },
+  { state: "Mizoram", capital: "Aizawl", top: "42%", left: "81%" },
+  { state: "Nagaland", capital: "Kohima", top: "32%", left: "86%" },
+  { state: "Odisha", capital: "Bhubaneswar", top: "50%", left: "50%" },
+  { state: "Punjab", capital: "Chandigarh", top: "18%", left: "27%" },
+  { state: "Rajasthan", capital: "Jaipur", top: "30%", left: "20%" },
+  { state: "Sikkim", capital: "Gangtok", top: "30%", left: "66.8%" },
+  { state: "Tamil Nadu", capital: "Chennai", top: "80%", left: "35%" },
+  { state: "Telangana", capital: "Hyderabad", top: "58%", left: "37%" },
+  { state: "Tripura", capital: "Agartala", top: "40%", left: "77%" },
+  { state: "Uttar Pradesh", capital: "Lucknow", top: "32%", left: "43%" },
+  { state: "Uttarakhand", capital: "Dehradun", top: "21%", left: "39%" },
+  { state: "West Bengal", capital: "Kolkata", top: "41%", left: "65%" },
 ];
 function search() {
   const text = document.getElementById("state").value;
@@ -47,7 +52,6 @@ function search() {
   if (w < 400) {
     div.style.fontSize = "small";
   }
-  div.style.zIndex = "99";
   div.style.cursor = "pointer";
   if (text === "Andhra Pradesh") {
     div.style.top = "68%";
@@ -219,12 +223,41 @@ function search() {
   temp.style.cursor = "pointer";
   temp.style.width = "140px";
   temp.style.fontWeight = "bold";
+  temp.style.zIndex = "99";
+
+  const temp2 = document.createElement("p");
+
+  states.map((item) => {
+    if (item.state === text) {
+      temp2.innerText = `Capital: ${item.capital}`;
+      temp2.style.position = "absolute";
+      temp2.style.zIndex = "1";
+      temp2.style.bottom = "-55px";
+      temp2.style.left = "0%";
+      temp2.style.cursor = "pointer";
+      temp2.style.width = "210px";
+      temp2.style.zIndex = "99";
+    }
+  });
+
+  if (
+    text === "Arunachal Pradesh" ||
+    text === "Nagaland" ||
+    text === "Manipur" ||
+    text === "Mizoram"
+  ) {
+    temp.style.left = "-80px";
+    temp.style.width = "150px";
+    temp2.style.left = "-80px";
+  }
 
   div.addEventListener("mouseenter", () => {
     div.appendChild(temp);
+    div.appendChild(temp2);
   });
   div.addEventListener("mouseleave", () => {
     div.removeChild(temp);
+    div.removeChild(temp2);
   });
 }
 
@@ -253,7 +286,7 @@ function add() {
     if (w < 400) {
       div.style.fontSize = "small";
     }
-    div.style.zIndex = "99";
+    div.style.zIndex = "9999";
     div.style.cursor = "pointer";
     div.style.top = item.top;
     div.style.left = item.left;
@@ -265,13 +298,37 @@ function add() {
     temp.style.bottom = "-35px";
     temp.style.left = "0%";
     temp.style.cursor = "pointer";
-    temp.style.width = "140px";
+    temp.style.width = "145px";
     temp.style.fontWeight = "bold";
+    temp.style.zIndex = "999";
+
+    const temp2 = document.createElement("p");
+    temp2.innerText = `Capital: ${item.capital}`;
+    temp2.style.position = "absolute";
+    temp2.style.zIndex = "1";
+    temp2.style.bottom = "-55px";
+    temp2.style.left = "0%";
+    temp2.style.cursor = "pointer";
+    temp2.style.width = "210px";
+    temp2.style.zIndex = "999";
+
+    if (
+      item.state === "Arunachal Pradesh" ||
+      item.state === "Nagaland" ||
+      item.state === "Manipur" ||
+      item.state === "Mizoram"
+    ) {
+      temp.style.left = "-80px";
+      temp.style.width = "150px";
+      temp2.style.left = "-80px";
+    }
     div.addEventListener("mouseenter", () => {
       div.appendChild(temp);
+      div.appendChild(temp2);
     });
     div.addEventListener("mouseleave", () => {
       div.removeChild(temp);
+      div.removeChild(temp2);
     });
     if (vol) success.play();
   });

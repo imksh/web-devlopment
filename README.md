@@ -8,7 +8,7 @@ A curated collection of my **frontend development tasks, exercises, and real min
 
 ### 🚀 Live Projects
 
-<table align="center">
+<table align="center" style="margin:0 auto;">
 <tr>
 <td><a href="https://imksh.github.io/web-development/task/mapAndState"><b>🗺️ Map & States</b></a></td>
 <td><a href="https://imksh.github.io/web-development/miniProject/calculator"><b>🧮 Calculator</b></a></td>
@@ -36,7 +36,7 @@ A curated collection of my **frontend development tasks, exercises, and real min
 
 ---
 
-### 📦 Tech I Use
+## 📦 Tech I Use
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />

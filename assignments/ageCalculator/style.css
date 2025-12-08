@@ -36,14 +36,13 @@ main {
 @media (max-width: 800px) {
   .box {
     width: 80%;
-    min-height: 75vh;
   }
 }
 
 @media (max-width: 500px) {
   .box {
     width: 90%;
-    min-height: 75vh;
+    min-height: 50vh;
     padding: 30px 10px !important;
     p,
     label {

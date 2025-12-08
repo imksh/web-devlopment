@@ -1,53 +1,88 @@
-# 🌐 Web Development Assignments and Projects
+<div align="center">
 
-This repository contains my web development assignments, practice exercises, and small projects created while learning and improving my frontend development skills.
+# 🌐 Web Development Assignments & Projects
+
+A curated collection of my **frontend development tasks, exercises, and real mini-projects**, created while learning HTML, CSS, and JavaScript.
+
+---
+
+### 🚀 Live Projects
+
+<table align="center">
+<tr>
+<td><a href="https://imksh.github.io/web-development/task/mapAndState"><b>🗺️ Map & States</b></a></td>
+<td><a href="https://imksh.github.io/web-development/miniProject/calculator"><b>🧮 Calculator</b></a></td>
+<td><a href="https://imksh.github.io/web-development/miniProject/ImageEditor"><b>🖼️ Image Editor</b></a></td>
+</tr>
+
+<tr>
+<td><a href="https://imksh.github.io/web-development/assignments/ageCalculator"><b>🎂 Age Calculator</b></a></td>
+<td><a href="https://imksh.github.io/web-development/assignments/tipCalculator"><b>💸 Tip Calculator</b></a></td>
+<td><a href="https://imksh.github.io/web-development/assignments/guessTheNumber"><b>🎯 Guess Number</b></a></td>
+</tr>
+
+<tr>
+<td><a href="https://imksh.github.io/web-development/javascript/passwordManager"><b>🔐 Password Manager</b></a></td>
+<td><a href="https://imksh.github.io/web-development/javascript/dice"><b>🎲 Dice Game</b></a></td>
+<td><a href="https://imksh.github.io/web-development/javascript/toDoList"><b>📝 ToDo List</b></a></td>
+</tr>
+
+<tr>
+<td><a href="https://imksh.github.io/web-development/CSS/portfolio"><b>💼 CSS Portfolio</b></a></td>
+<td><a href="https://imksh.github.io/web-development/test/sevenDec"><b>🧪 Test Website</b></a></td>
+<td></td>
+</tr>
+</table>
+
+---
+
+### 📦 Tech I Use
+
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white" />
+</p>
+
+</div>
 
 ---
 
 ## 📁 Contents
 
-- **HTML Tasks:**  
-  Basic structure, forms, tables, semantic tags, and layout exercises.
+### 🔸 **HTML Tasks**
+- Forms, tables, semantic tags  
+- Basic layout building  
 
-- **CSS Tasks:**  
-  Styling, responsive design, positioning, flexbox, grid, and animations.
+### 🔸 **CSS Tasks**
+- Flexbox & Grid  
+- Responsive pages  
+- Animations & transitions  
 
-- **JavaScript Tasks:**  
-  DOM manipulation, form validation, event handling, and small logic-based mini-projects.
+### 🔸 **JavaScript Tasks**
+- DOM manipulation  
+- Event handling  
+- Form validation  
+- Mini logic-based projects  
 
-- **Mini Projects:**  
-  Practical web interfaces built by combining HTML, CSS, and JS.
-
----
-
-## 🧠 Learning Goals
-
-- Strengthen understanding of core web technologies: **HTML, CSS, and JavaScript**
-- Practice writing clean, semantic, and reusable code
-- Build responsive and visually appealing web pages
-- Explore web interactivity and basic dynamic features
+### 🔸 **Mini Projects**
+- Real interfaces built using HTML, CSS & JS  
+- Each hosted on GitHub Pages  
 
 ---
 
-## 🧠 Projects
+## 🎯 Learning Goals
 
-- **Map and Staes**: https://imksh.github.io/web-development/task/mapAndState
-- **Calculator**: https://imksh.github.io/web-development/miniProject/calculator
-- **Image Editor**: https://imksh.github.io/web-development/miniProject/ImageEditor
-- **Age Calculator**: https://imksh.github.io/web-development/assignments/ageCalculator
-- **Tip Calculator**: https://imksh.github.io/web-development/assignments/tipCalculator
-- **Guess The Number**: https://imksh.github.io/web-development/assignments/guessTheNumber
-- **Password Manager**: https://imksh.github.io/web-development/javascript/passwordManager
-- **Dice Game**: https://imksh.github.io/web-development/javascript/dice
-- **ToDo List**: https://imksh.github.io/web-development/javascript/toDoList
-- **CSS Portfolio**: https://imksh.github.io/web-development/CSS/portfolio
-- **Test Website (7 dec 2025)**: https://imksh.github.io/web-development/test/sevenDec
+✔ Build strong foundation in **core web development**  
+✔ Write clean, reusable, semantic code  
+✔ Build responsive, modern UI layouts  
+✔ Understand interactivity using JS  
+✔ Practice real-world mini-projects  
 
 ---
 
-## ⚙️ How to Use
+## ⚙️ How to Clone This Repository
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/imksh/web-development.git
-   ```
+```bash
+git clone https://github.com/imksh/web-development.git

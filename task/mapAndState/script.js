@@ -1,7 +1,7 @@
-let audio = new Audio("./_src/button2.mp3");
-let btn1 = new Audio("./_src/button1.mp3");
-let clearSound = new Audio("./_src/clear.mp3");
-let success = new Audio("./_src/sucess.mp3");
+let audio = new Audio("./src/button2.mp3");
+let btn1 = new Audio("./src/button1.mp3");
+let clearSound = new Audio("./src/clear.mp3");
+let success = new Audio("./src/sucess.mp3");
 let vol = true;
 const states = [
   { state: "Andhra Pradesh", capital: "Amaravati", top: "68%", left: "37%" },

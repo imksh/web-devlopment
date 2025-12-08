@@ -31,24 +31,23 @@ This repository contains my web development assignments, practice exercises, and
 
 ## 🧠 Projects
 
-- **Map and Staes**: https://imksh.github.io/web-devlopment/task/mapAndState
-- **Calculator**: https://imksh.github.io/web-devlopment/miniProject/calculator
-- **Image Editor**: https://imksh.github.io/web-devlopment/miniProject/ImageEditor
-- **Age Calculator**: https://imksh.github.io/web-devlopment/assignments/ageCalculator
-- **Tip Calculator**: https://imksh.github.io/web-devlopment/assignments/tipCalculator
-- **Guess The Number**: https://imksh.github.io/web-devlopment/assignments/guessTheNumber
-- **Password Manager**: https://imksh.github.io/web-devlopment/javascript/passwordManager
-- **Dice Game**: https://imksh.github.io/web-devlopment/javascript/dice
-- **ToDo List**: https://imksh.github.io/web-devlopment/javascript/toDoList
-- **CSS Portfolio**: https://imksh.github.io/web-devlopment/CSS/portfolio
-- **Test Website (7 dec 2025)**: https://imksh.github.io/web-devlopment/test/sevenDec
-
+- **Map and Staes**: https://imksh.github.io/web-development/task/mapAndState
+- **Calculator**: https://imksh.github.io/web-development/miniProject/calculator
+- **Image Editor**: https://imksh.github.io/web-development/miniProject/ImageEditor
+- **Age Calculator**: https://imksh.github.io/web-development/assignments/ageCalculator
+- **Tip Calculator**: https://imksh.github.io/web-development/assignments/tipCalculator
+- **Guess The Number**: https://imksh.github.io/web-development/assignments/guessTheNumber
+- **Password Manager**: https://imksh.github.io/web-development/javascript/passwordManager
+- **Dice Game**: https://imksh.github.io/web-development/javascript/dice
+- **ToDo List**: https://imksh.github.io/web-development/javascript/toDoList
+- **CSS Portfolio**: https://imksh.github.io/web-development/CSS/portfolio
+- **Test Website (7 dec 2025)**: https://imksh.github.io/web-development/test/sevenDec
 
 ---
-
 
 ## ⚙️ How to Use
 
 1. Clone this repository:
    ```bash
    git clone https://github.com/imksh/web-development.git
+   ```
